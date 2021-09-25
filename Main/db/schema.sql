@@ -1,2 +1,4 @@
-DROP DATABASE IF EXISTS wasteNoMore_db;
-CREATE DATABASE wasteNoMore_db;
+DROP DATABASE IF EXISTS wastenomore_db;
+CREATE DATABASE wastenomore_db;
+
+
