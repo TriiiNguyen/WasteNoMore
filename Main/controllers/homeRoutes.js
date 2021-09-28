@@ -2,6 +2,10 @@ const router = require('express').Router();
 const { Project, User } = require('../models');
 const withAuth = require('../utils/auth');
 
+
+// update routes to what we want to show on the home page
+// create "explore page" potentially to load up garden DB
+
 router.get('/', async (req, res) => {
   try {
     // Get all projects and JOIN with user data

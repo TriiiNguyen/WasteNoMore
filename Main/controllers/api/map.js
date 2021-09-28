@@ -1,4 +1,15 @@
+// put key in .env file 
+// Create variable inside of dotenv file to replace with actual key
+
+
+require('dotenv').config();
+
+
+
 const mapkey = "AIzaSyCpSBx1lRYNTBGBAzxLUjWYaSLnKq1u1Us"
+
+// front end function (will need API info)
+// JSon fetched info which ios used in the below function
 
 function initMap(){
   const options = {
