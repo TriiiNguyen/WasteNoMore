@@ -1,19 +1,9 @@
 [
   {
     "firstname": "Sal",
-    "lastname": "Sa",
+    "lastname": "sa",
     "email": "sal@hotmail.com",
     "password": "password12345"
-  },
-  {
-    "firstname": "Lernantino",
-    "lastname": "Lenny",
-    "email": "lernantino@gmail.com",
-    "password": "password12345"
-  },
-  {
-    "name": "Amiko",
-    "email": "amiko2k20@aol.com",
-    "password": "password12345"
   }
+
 ]

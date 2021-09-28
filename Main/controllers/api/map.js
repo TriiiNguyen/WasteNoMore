@@ -6,7 +6,7 @@ require('dotenv').config();
 
 
 
-const mapkey = "AIzaSyCpSBx1lRYNTBGBAzxLUjWYaSLnKq1u1Us"
+const mapkey = "MAPKEY"
 
 // front end function (will need API info)
 // JSon fetched info which is used in the below function
