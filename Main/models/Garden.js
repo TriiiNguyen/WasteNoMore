@@ -29,6 +29,12 @@ Gardens.init (
     website: {
       type: DataTypes.STRING,
     },
+    longitude: {
+      type: DataTypes.GEOMETRY,
+    },
+    latitude: {
+      type: DataTypes.GEOMETRY,
+    },
   },
   {
     sequelize,
