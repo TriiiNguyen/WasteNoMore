@@ -1,6 +1,8 @@
 // put key in .env file 
 // Create variable inside of dotenv file to replace with actual key
-
+const gardensData = require("../../seeds/gardensData.json");
+const lng = gardensData.longitude;
+const lat = gardensData.latitude;
 
 require('dotenv').config();
 
@@ -13,9 +15,18 @@ const mapkey = "MAPKEY"
 
 function initMap(){
   const options = {
-    center: { lat: 33.7175, lng: 117.8311},
+    center: { lat: 33.7175, lng: -117.8311},
     zoom: 8
   }
 
   map = new google.maps.Map(document.getElementById("map"), options)
+
+  function addMarker(location){
+    const marker = new google.maps.Marker({
+      position: location,
+      map:map,
+    
+    })
+  }
+  addMarker({location{lat, lng}});
 }
