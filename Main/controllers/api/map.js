@@ -10,12 +10,14 @@ require('dotenv').config();
 
 const mapkey = "MAPKEY"
 
+generateMap([33.7175, -117.8311]);
 // front end function (will need API info)
 // JSon fetched info which is used in the below function
 
+
 function initMap(){
   const options = {
-    center: { lat: 33.7175, lng: -117.8311},
+    center: { lat: 33.7175, lng: - 117.8311 },
     zoom: 8
   }
 
@@ -29,4 +31,9 @@ function initMap(){
     })
   }
   addMarker({location{lat, lng}});
+
+  //Listen for click on map location
+  google.maps.event.addListener(map, "click", (event) => 
+    addMarker({location:event.latLng})
+  )
 }
