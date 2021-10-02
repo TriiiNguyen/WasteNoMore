@@ -55,3 +55,11 @@ html, body {
 #signUpBtn {
   background-color: orange;
 }
+
+.map {
+  margin-top: 15%;
+}
+
+#contact-me {
+  color: green;
+}
