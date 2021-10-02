@@ -1,13 +1,15 @@
 const User = require('./User');
-const Project = require('./Project');
+const Gardens = require('./Garden');
 
-User.hasMany(Project, {
-  foreignKey: 'user_id',
-  onDelete: 'CASCADE'
-});
+// Will only need the below code if we want to allow users to "favorite" their favorite gardens. Only when we create an assoication between the users and the gardens.
 
-Project.belongsTo(User, {
-  foreignKey: 'user_id'
-});
+// User.hasMany(Project, {
+//   foreignKey: 'user_id',
+//   onDelete: 'CASCADE'
+// });
 
-module.exports = { User, Project };
+// Project.belongsTo(User, {
+//   foreignKey: 'user_id'
+// });
+
+module.exports = { User, Gardens };

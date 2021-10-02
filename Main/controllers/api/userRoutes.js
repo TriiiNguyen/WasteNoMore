@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
+
+// creates new user in DB
 router.post('/', async (req, res) => {
   try {
     const userData = await User.create(req.body);
@@ -40,7 +42,8 @@ router.post('/login', async (req, res) => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
       
-      res.json({ user: userData, message: 'You are now logged in!' });
+      const plainUser = userData.get({plain:true})
+      res.json({ user: {...plainUser, password: null}, message: 'You are now logged in!' });
     });
 
   } catch (err) {
