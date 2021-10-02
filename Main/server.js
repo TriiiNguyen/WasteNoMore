@@ -1,4 +1,3 @@
-require('dotenv').config();
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
@@ -29,24 +28,18 @@ const sess = {
 app.use(session(sess));
 
 // Inform Express.js on which template engine to use
-
-app.engine('handlebars', handlebars({
-  layoutsDir: path.join(`${__dirname}/views`),
-  extname: 'handlebars',
-  defaultLayout: 'main'
-}));
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
+app.get('/', function(req,res){
+  res.render('homepage')
+});
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
-
-app.get('/', (req, res) => {
-  res.render('home', {layout: 'main'});
-});
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));

@@ -33,3 +33,25 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+#titleColor {
+  color: orange;
+}
+
+#slogan {
+  color: lightslategray;
+  font-size: 10px;
+}
+
+.navOptions {
+  color: orange;
+  margin: 10px;
+}
+
+.signUp {
+  margin-top: 10%;
+}
+
+#signUpBtn {
+  background-color: orange;
+}
