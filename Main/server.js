@@ -29,11 +29,14 @@ const sess = {
 app.use(session(sess));
 
 // Inform Express.js on which template engine to use
-app.engine('hbs', handlebars({
-  layoutsDir: `${__dirname}/views/layouts`,
-  extname: 'hbs',
+
+app.engine('handlebars', handlebars({
+  layoutsDir: path.join(`${__dirname}/views`),
+  extname: 'handlebars',
+  defaultLayout: 'main'
 }));
-app.set('view engine', 'hbs');
+app.set('view engine', 'handlebars');
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

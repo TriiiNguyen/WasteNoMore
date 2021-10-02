@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Project, User } = require('../models');
 const withAuth = require('../utils/auth');
-
+const fs = require('fs'); 
 
 // update routes to what we want to show on the home page
 // create "explore page" potentially to load up garden DB
@@ -52,6 +52,25 @@ router.get('/project/:id', async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+//Render Map
+router.get('/maps', async (req,res) => {
+  console.log("Loading the MAPS HANDELBAR ")
+  res.render('maps');
+  //REading the garden JSON file 
+  // const gardenMarkers = fs.readFile('./seeds/gardensData.json', 'utf-8', (err, data) =>{
+  //   if (err) {
+  //     console.log(err); 
+  //     return; 
+  //   }
+  //   return data; 
+  // }); 
+  // console.log("JSON file data ", gardenMarkers);
+
+  // res.render('maps', {
+  //   markers : gardenMarkers,
+  //    logged_in: req.session.logged_in  })
+})
 
 // Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {
