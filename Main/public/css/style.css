@@ -55,3 +55,7 @@ html, body {
 #signUpBtn {
   background-color: orange;
 }
+
+.map {
+  margin-top: 25%;
+}

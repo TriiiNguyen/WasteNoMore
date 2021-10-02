@@ -22,17 +22,18 @@
         <a href="/profile">profile</a> |
         <button class="no-button" id="logout">logout</button>
         {{else}}
-        <a href="/homepage" class="navOptions">home</a>
         <a href="/login" class="navOptions">login</a>
         <a href="/" class="navOptions">donate</a>
         {{/if}}
       </nav>
     </header>
+    <h2 class="map">MAP GOES HERE ?</h2>
     <main class="container container-fluid mt-5 signUp">
       {{{body}}}
     </main>
+    
     <footer>
-
+      
     </footer>
   </div>
   {{#if logged_in}}
