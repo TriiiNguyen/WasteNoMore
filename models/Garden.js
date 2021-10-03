@@ -30,11 +30,19 @@ Gardens.init (
       type: DataTypes.STRING,
     },
     longitude: {
-      type: DataTypes.GEOMETRY,
+      type: DataTypes.FLOAT(20, 16),
     },
     latitude: {
-      type: DataTypes.GEOMETRY,
+      type: DataTypes.FLOAT(20, 16),
     },
+    host_id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: {
+            model: 'user',
+            key: 'id',
+          },
+    }
   },
   {
     sequelize,
