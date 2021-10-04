@@ -1,22 +1,70 @@
-.pageDisplay {
- 
- 
- 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* .imgbanner {
+  width: 100%;
+  border: 10px solid green;
+} */
+
+body, html {
+  height: 100%
 }
 
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.pinimg.com/originals/ae/1d/4f/ae1d4fa25da4a22a151a03e3c8a7802d.gif");
 
-body{
+  /* Set a specific height */
+  height: 20rem;
+  
 
-  /* background: linear-gradient(green, orange); */
-  background-size: cover;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
   background-repeat: no-repeat;
-
+  background-size: cover;
+  position: relative;
 }
 
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: orange;
+}
 
+#welcome {
+  text-align: center;
+}
+
+#homeParagraph {
+  text-align: center;
+} 
+
+.imgbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#firstGarden {
+  width: 20rem;
+  height: 15rem;
+  border-radius: 3px;
+}
+
+#secondGarden {
+  width: 20rem;
+  height: 15rem;
+  border-radius: 3px;
+}
+
+#firstGarden:hover {
+  box-shadow: 0px 0px 5px 5px rgb(33, 87, 33);
+}
+
+#secondGarden:hover {
+  box-shadow: 0px 0px 5px 5px rgb(33, 87, 33);
+}
 
 header {
   display: flex;
@@ -28,31 +76,53 @@ header {
   
 }
 
-
 header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
+#slogan {
+  color: lightslategray;
+  font-size: 10px;
+}
+
+.navOptions {
+  color: orange;
+  margin: 10px;
+}
 
 .no-button {
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
-  color: #1b89bc;
+  color: orange;
   text-decoration: none;
   font-size: 100%;
 }
 
 .no-button:hover {
-  color: #065b83;
+  color: orange;
   text-decoration: underline;
 }
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
+#titleColor {
+  color: orange;
+}
+
+/* .signUp {
+  margin-top: 20%;
+} */
+
+/* 
+
+.mainclass {
+  width: 100%;
+}
+
+body{
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 #map {
@@ -66,27 +136,7 @@ html, body {
   padding: 0;
 }
 
-#titleColor {
-  color: orange;
-}
 
-#slogan {
-  color: lightslategray;
-  font-size: 10px;
-}
-
-.navOptions {
-  color: orange;
-  margin: 10px;
-}
-
-.signUp {
-  margin-top: 10%;
-}
-
-#signUpBtn {
-  background-color: orange;
-}
 
 .map {
   margin-top: 15%;
@@ -94,8 +144,6 @@ html, body {
 
 #contact-me {
   color: green;
-/* <<<<<<< HEAD */
-/* ======= */
 }
 
 svg {
@@ -113,27 +161,6 @@ footer {
   justify-content: center;
   background: white;
   width: 100%;
-<<<<<<< HEAD:public/css/style.css
 }
 
-.banner {
-  width: 100%;
-}
-
-#welcome {
-  text-align: center;
-}
-
-#firstGarden, #secondGarden {
-  object-fit:contain;
-  width:200px;
-  height:300px;
-  border: solid 1px #CCC"
-}
-
-#homeParagraph {
-  text-align: center;
-=======
-/* >>>>>>> e94779fe800c8b635e349576d3d8c3cb83f9e1ad */
->>>>>>> main:Main/public/css/style.css
-}
+*/
