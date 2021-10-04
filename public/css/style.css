@@ -10,7 +10,7 @@
 
 body{
 
-  background: linear-gradient(green, orange);
+  /* background: linear-gradient(green, orange); */
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -56,7 +56,7 @@ header, .project:not(:last-child) {
 }
 
 #map {
-  height: 800px;
+  height: 80px;
   width: 100%
 }
 
@@ -94,6 +94,8 @@ html, body {
 
 #contact-me {
   color: green;
+/* <<<<<<< HEAD */
+/* ======= */
 }
 
 svg {
@@ -111,4 +113,27 @@ footer {
   justify-content: center;
   background: white;
   width: 100%;
+<<<<<<< HEAD:public/css/style.css
+}
+
+.banner {
+  width: 100%;
+}
+
+#welcome {
+  text-align: center;
+}
+
+#firstGarden, #secondGarden {
+  object-fit:contain;
+  width:200px;
+  height:300px;
+  border: solid 1px #CCC"
+}
+
+#homeParagraph {
+  text-align: center;
+=======
+/* >>>>>>> e94779fe800c8b635e349576d3d8c3cb83f9e1ad */
+>>>>>>> main:Main/public/css/style.css
 }
