@@ -27,6 +27,10 @@ async function initMap() {
     addMarker({lat: garden.latitude, lng: garden.longitude}, map)
   });
 
+  //Listen for click on map location
+  // google.maps.event.addListener(map, "click", (event) => 
+  //   addMarker(event.latLng, map)
+  // )
 
 }
   
