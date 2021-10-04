@@ -53,27 +53,54 @@ body, html {
 }
 
 #secondGarden {
-  width: 20rem;
-  height: 15rem;
-  border-radius: 3px;
+  width: 350px;
+  height: 250px;
+}
+
+.mainclass {
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  height: 100px;
+  margin-top: 100px;
+  left: 50%;
 }
 
 #firstGarden:hover {
   box-shadow: 0px 0px 5px 5px rgb(33, 87, 33);
 }
 
-#secondGarden:hover {
-  box-shadow: 0px 0px 5px 5px rgb(33, 87, 33);
+.listDisplay{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.profilemap {
+  width: 40%;
+  height: 200px;
+}
+
+body{
+
+  /* background: linear-gradient(green, orange); */
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 header {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   background: white;
   margin-top: -3px;
-  
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 header, .project:not(:last-child) {
@@ -163,4 +190,38 @@ footer {
   width: 100%;
 }
 
-*/
+
+
+#welcome {
+  text-align: center;
+}
+
+
+
+#homeParagraph {
+  text-align: center;
+}
+
+.gardensList{
+  display: flex;
+
+}
+
+.profileBody{
+  overflow: auto;
+  width: 90vw;
+
+}
+
+.grid-container{
+  display: grid; 
+  grid-template-columns: auto auto;
+  grid-gap:20px;
+  /* background-color: greenyellow; */
+  /* min-height: 600px; 
+}
+
+#map{
+  height: 400px; 
+  width:400px
+} */

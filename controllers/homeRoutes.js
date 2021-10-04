@@ -14,9 +14,9 @@ router.get('/', async (req, res) => {
     const gardens = gardenData.map((project) => project.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render('homepage', { 
-      gardens, 
-      logged_in: req.session.logged_in 
+    res.render('homepage', {
+      gardens,
+      logged_in: req.session.logged_in
     });
   } catch (err) {
     console.log(err);
@@ -49,19 +49,25 @@ router.get('/garden/:id', async (req, res) => {
 
 // Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {
+
   try {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [
-        {model: Gardens, as: 'hostedGardens'}
-      ]
+      /* include: [
+         {model: Gardens, as: 'hostedGardens'}
+       ]*/
     });
 
-    const user = userData.get({ plain: true });
+    //get only top five gardens for the user 
+    const gardenList = await Gardens.findAll({});
+    const hostedGardens = gardenList.map((project) => project.get({ plain: true }));
 
+    const user = userData.get({ plain: true });
+   
     res.render('profile', {
       ...user,
+      hostedGardens,
       logged_in: true
     });
   } catch (err) {
@@ -84,7 +90,7 @@ router.get('/login', (req, res) => {
 //     res.redirect('/donate');
 //     return;
 //   }
-  
+
 //   res.render('login');
 // })
 
