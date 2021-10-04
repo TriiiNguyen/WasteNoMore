@@ -1,3 +1,35 @@
+.imgbanner {
+  width: 100%;
+  border: 10px solid green;
+}
+
+.imgbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#firstGarden {
+  width: 350px;
+  height: 250px;
+  border-radius: 3px;
+}
+#firstGarden:hover {
+  box-shadow: 0px 0px 5px 5px rgb(33, 87, 33);
+}
+#secondGarden:hover {
+  box-shadow: 0px 0px 5px 5px rgb(33, 87, 33);
+}
+
+#secondGarden {
+  width: 350px;
+  height: 250px;
+}
+
+.mainclass {
+  width: 100%;
+}
+
 .pageDisplay {
  
  
@@ -115,35 +147,14 @@ footer {
   width: 100%;
 }
 
-.banner {
-  width: 100%;
-}
+
 
 #welcome {
   text-align: center;
 }
 
-#firstGarden  {
-  /* object-fit:contain; */
-  width:300px;
-  height:300px;
-  border: 5px solid black
-}
 
-#secondGarden {
-  /* object-fit:contain; */
-  width:300px;
-  height:300px;
-  margin-left: 200px;
-  border: 5px solid black
-}
 
 #homeParagraph {
   text-align: center;
-}
-
-#pictures {
-  margin-top: 0%;
-  margin-bottom: 0%;
-  max-height: 300px;
 }
