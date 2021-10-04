@@ -155,9 +155,25 @@ header, .project:not(:last-child) {
   color: orange;
 }
 
-/* .signUp {
-  margin-top: 20%;
-} */
+#contact-me {
+  margin: 30px;
+  margin-top: 50px;
+}
+
+.signUp {
+  margin: 10%;
+}
+
+h2,
+h3 {
+  color: orange
+}
+
+footer {
+  margin-bottom: 30px;
+  text-align: center;
+  
+}
 
 /* 
 
@@ -190,9 +206,7 @@ html, body {
 
 
 
-#contact-me {
-  color: green;
-}
+
 
 svg {
   border-radius: 5px;
