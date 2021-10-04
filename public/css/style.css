@@ -73,6 +73,10 @@ body, html {
   box-shadow: 0px 0px 5px 5px rgb(33, 87, 33);
 }
 
+#secondGarden:hover {
+  box-shadow: 0px 0px 5px 5px rgb(33, 87, 33);
+}
+
 .listDisplay{
   display: flex;
   flex-direction: column;
@@ -139,11 +143,11 @@ header, .project:not(:last-child) {
   color: orange;
 }
 
-/* .signUp {
+.signUp {
   margin-top: 20%;
 } */
 
-/* 
+
 
 .mainclass {
   width: 100%;
@@ -222,11 +226,11 @@ footer {
   display: grid; 
   grid-template-columns: auto auto;
   grid-gap:20px;
-  /* background-color: greenyellow; */
-  /* min-height: 600px; 
+  /*background-color: greenyellow; */
+   min-height: 600px; 
 }
 
 #map{
   height: 400px; 
   width:400px
-} */
+} 
