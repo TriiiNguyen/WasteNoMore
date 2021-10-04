@@ -1,3 +1,5 @@
+const withAuth = require("../../utils/auth");
+
 function addMarker(position, map) {
   const marker = new google.maps.Marker({
     position,
