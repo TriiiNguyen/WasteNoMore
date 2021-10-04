@@ -1,3 +1,35 @@
+.imgbanner {
+  width: 100%;
+  border: 10px solid green;
+}
+
+.imgbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#firstGarden {
+  width: 350px;
+  height: 250px;
+  border-radius: 3px;
+}
+#firstGarden:hover {
+  box-shadow: 0px 0px 5px 5px rgb(33, 87, 33);
+}
+#secondGarden:hover {
+  box-shadow: 0px 0px 5px 5px rgb(33, 87, 33);
+}
+
+#secondGarden {
+  width: 350px;
+  height: 250px;
+}
+
+.mainclass {
+  width: 100%;
+}
+
 .pageDisplay {
  
  
@@ -113,27 +145,16 @@ footer {
   justify-content: center;
   background: white;
   width: 100%;
-<<<<<<< HEAD:public/css/style.css
 }
 
-.banner {
-  width: 100%;
-}
+
 
 #welcome {
   text-align: center;
 }
 
-#firstGarden, #secondGarden {
-  object-fit:contain;
-  width:200px;
-  height:300px;
-  border: solid 1px #CCC"
-}
+
 
 #homeParagraph {
   text-align: center;
-=======
-/* >>>>>>> e94779fe800c8b635e349576d3d8c3cb83f9e1ad */
->>>>>>> main:Main/public/css/style.css
 }
