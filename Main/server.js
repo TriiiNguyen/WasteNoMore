@@ -36,6 +36,10 @@ app.get('/', function(req,res){
   res.render('homepage')
 });
 
+app.get('/profile', function(req,res){
+  res.render('profile.handlebars')
+});
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
