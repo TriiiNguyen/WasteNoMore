@@ -1,0 +1,155 @@
+
+[
+  {
+    "name": "Wig Wag Community Garden",
+    "address": "428 S Melrose St, Anaheim, CA 92805",
+    "website": "http://www.anaheim.net/1459/Community-Gardens",
+    "latitude":33.83264331062641,
+    "longitude": -117.9073882819386,
+    "host_id": 1
+  },
+  {
+    "name": "Hamilton Community Garden",
+    "address": "523 Hamilton St, Costa Mesa, CA 92627",
+    "website": "https://www.communitygarden.org/",
+    "latitude":33.65064387712652,
+    "longitude": -117.9203087445287,
+    "host_id": 1
+  },
+  {
+    "name": "Del Mar Community Garden",
+    "address": "170 Del Mar Ave, Costa Mesa, CA 92627",
+    "website": "https://www.costamesaca.gov/city-hall/city-departments/parks-and-community-services/community-gardens#ad-image-0",
+    "latitude":33.66173143805789,
+    "longitude": -117.8943299850136,
+    "host_id": 1
+  },
+  {
+    "name": "Stanton Community Garden",
+    "address": "7455 Katella Ave, Stanton, CA 90680",
+    "website": "https://www.stantonca.gov/Departments/Community-Services/Community-Garden",
+    "latitude":33.80352894393135,
+    "longitude": -118.00267645986601,
+    "host_id": 1
+  },
+  {
+    "name": "Coastkeeper Garden Share",
+    "address": "8045 E Chapman Ave, Orange, CA 92869",
+    "website": "https://www.coastkeeper.org/portfolio/coastkeeper-garden-share-august-12-2017/",
+    "latitude":33.79486523348858,
+    "longitude": -117.76184398501012,
+    "host_id": 1
+  },
+  {
+    "name": "Common Ground Community Garden",
+    "address": "2123 W Katella Ave, Anaheim, CA 92804",
+    "website": "https://westanaheim.wixsite.com/commonground-wa",
+    "latitude":33.77480925200412,
+    "longitude": -117.93322901569114,
+    "host_id": 1
+  },
+  {
+    "name": "Garden Grove Community Garden GGCG",
+    "address": "11421 Garden Grove Blvd, Garden Grove, CA 92843",
+    "website": "https://ggcity.org/",
+    "latitude":33.774800333884464,
+    "longitude": -117.93329338870166,
+    "host_id": 1
+  },
+  {
+    "name": "East Anaheim Community Garden",
+    "address": "8268 E Monte Vista Rd, Anaheim, CA 92807",
+    "website": "https://eacg12.com/",
+    "latitude":33.86291316844966,
+    "longitude": -117.74219780219477,
+    "host_id": 1
+  },
+  {
+    "name": "Madison Park Community Garden",
+    "address": "Santa Ana, CA 92707",
+    "website": "",
+    "latitude":33.72854889353022,
+    "longitude": -117.8582419733622,
+    "host_id": 1
+  },
+  {
+    "name": "Anthill Village Community Garden",
+    "address": "8500 Palo Verde Rd, Irvine, CA 92617",
+    "website": "https://avcg.org/",
+    "latitude":33.640780,
+    "longitude": -117.831989,
+    "host_id": 1
+  },
+  {
+    "name": "Woodbridge Community Garden Club",
+    "address": "3 Springbrook S, Irvine, CA 92614",
+    "website": "https://wva.org/",
+    "latitude":33.665946,
+    "longitude": -117.801668,
+    "host_id": 1
+  },
+  {
+    "name": "Edison Park Community Garden",
+    "address": "99 College Park Dr, Seal Beach, CA 90740",
+    "website": "https://www.sealbeachca.gov/Departments/Community-Services-Recreation/Parks-Facilities/Edison-Park-and-Gardens",
+    "latitude":33.775289,
+    "longitude": -118.096236,
+    "host_id": 1
+  },
+  {
+    "name": "Pacific Electric Park Community Garden",
+    "address": "399-301 Harwood Pl, Santa Ana, CA 92701",
+    "website": "https://www.santa-ana.org/parks/parks-and-facilities/pacific-electric-park",
+    "latitude":33.733992,
+    "longitude": -117.864502,
+    "host_id": 1
+  },
+  {
+    "name": "El Salvador Community Garden",
+    "address": "1851-1899 W 9th St, Santa Ana, CA 92703",
+    "website": "https://www.santa-ana.org/parks/parks-location/el-salvador-center",
+    "latitude":33.752628,
+    "longitude": -117.893713,
+    "host_id": 1
+  },
+  {
+    "name": "Harry Otsubo Community Gardens",
+    "address": "24800 Stonehill Dr, Dana Point, CA 92629",
+    "website": "",
+    "latitude":33.476056,
+    "longitude": -117.697078,
+    "host_id": 1
+  },
+  {
+    "name": "259 Rise Park",
+    "address": "249 Sawbuck, Irvine, CA 92618",
+    "website": "",
+    "latitude":33.671390,
+    "longitude": -117.722291,
+    "host_id": 1
+  },
+  {
+    "name": "Jerome Park Community Garden",
+    "address": "2201 W McFadden Ave, Santa Ana, CA 92704",
+    "website": "",
+    "latitude":33.734943,
+    "longitude": -117.896224,
+    "host_id": 1
+  },
+  {
+    "name": "Emmanuel Episcopal Community Garden",
+    "address": "1220 W Bastanchury Pl, Fullerton, CA 92833",
+    "website": "https://www.emmanuelfullerton.org/",
+    "latitude":33.885066,
+    "longitude": -117.946703,
+    "host_id": 1
+  },
+  {
+    "name": "Rose Garden",
+    "address": "51 Stone Creek N, Irvine, CA 92604",
+    "website": "",
+    "latitude":33.684618,
+    "longitude": -117.797600,
+    "host_id": 1
+  }
+]
