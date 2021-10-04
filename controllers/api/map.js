@@ -1,6 +1,6 @@
 // put key in .env file 
 // Create variable inside of dotenv file to replace with actual key
-const gardensData = require("../../seeds/gardensData.json");
+const gardensData = require("../../Main/seeds/gardensData.json");
 const lng = gardensData.longitude;
 const lat = gardensData.latitude;
 
@@ -30,7 +30,11 @@ function initMap(){
     
     })
   }
-  addMarker({location{lat, lng}});
+<<<<<<< HEAD:controllers/api/map.js
+  addMarker({location,lat, lng});
+=======
+  addMarker({location, lat, lng});
+>>>>>>> main:Main/controllers/api/map.js
 
   //Listen for click on map location
   google.maps.event.addListener(map, "click", (event) => 
