@@ -39,6 +39,16 @@
   align-items: center;
 }
 
+.listDisplay{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.profilemap {
+  width: 40%;
+  height: 200px;
+}
 
 body{
 
@@ -52,12 +62,16 @@ body{
 
 header {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   background: white;
   margin-top: -3px;
-  
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 
