@@ -27,7 +27,12 @@
 }
 
 .mainclass {
-  width: 100%;
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  height: 100px;
+  margin-top: 100px;
+  left: 50%;
 }
 
 .pageDisplay {
@@ -170,4 +175,14 @@ footer {
 
 #homeParagraph {
   text-align: center;
+}
+
+.gardensList{
+  display: flex;
+
+}
+
+.profileBody{
+  display: flex;
+  overflow: auto;
 }
