@@ -155,27 +155,11 @@ header, .project:not(:last-child) {
   color: orange;
 }
 
-#contact-me {
-  margin: 30px;
-  margin-top: 50px;
-}
-
 .signUp {
-  margin: 10%;
-}
+  margin-top: 20%;
+} */
 
-h2,
-h3 {
-  color: orange
-}
 
-footer {
-  margin-bottom: 30px;
-  text-align: center;
-  
-}
-
-/* 
 
 .mainclass {
   width: 100%;
@@ -252,11 +236,11 @@ footer {
   display: grid; 
   grid-template-columns: auto auto;
   grid-gap:20px;
-  /* background-color: greenyellow; */
-  /* min-height: 600px; 
+  /*background-color: greenyellow; */
+   min-height: 600px; 
 }
 
 #map{
   height: 400px; 
   width:400px
-} */
+} 
