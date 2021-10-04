@@ -54,4 +54,15 @@ html, body {
 
 #signUpBtn {
   background-color: orange;
+<<<<<<< HEAD
+=======
+}
+
+.map {
+  margin-top: 15%;
+}
+
+#contact-me {
+  color: green;
+>>>>>>> 8b8f405345f511d3326422b8d48fc37a91f3cf0c
 }

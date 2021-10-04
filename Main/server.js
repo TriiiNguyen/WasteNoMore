@@ -1,4 +1,3 @@
-require('dotenv').config();
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
@@ -34,6 +33,10 @@ app.set('view engine', 'handlebars');
 
 app.get('/', function(req,res){
   res.render('homepage')
+});
+
+app.get('/profile', function(req,res){
+  res.render('profile.handlebars')
 });
 
 app.use(express.json());
