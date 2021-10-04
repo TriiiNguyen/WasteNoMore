@@ -17,12 +17,30 @@ generateMap([33.7175, -117.8311]);
 
 function initMap(){
   const options = {
+<<<<<<< HEAD
+    center: { lat: 33.7175, lng: -117.8311},
+=======
     center: { lat: 33.7175, lng: - 117.8311 },
+>>>>>>> a77ea3d883cbec5692db853ac85b07a727d3f006
     zoom: 8
   }
 
+  //New Map
   map = new google.maps.Map(document.getElementById("map"), options)
 
+<<<<<<< HEAD
+  //Marker
+  function addMarker(location){
+
+  
+    const marker = new google.maps.Marker({
+      position:location,
+      map: map 
+    });
+  }
+  addMarker{ lat: 33.7175, lng: -117.8311 }
+
+=======
   function addMarker(location){
     const marker = new google.maps.Marker({
       position: location,
@@ -36,4 +54,5 @@ function initMap(){
   google.maps.event.addListener(map, "click", (event) => 
     addMarker({location:event.latLng})
   )
+>>>>>>> a77ea3d883cbec5692db853ac85b07a727d3f006
 }
