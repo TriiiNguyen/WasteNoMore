@@ -30,7 +30,12 @@
 }
 
 .mainclass {
-  width: 100%;
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  height: 100px;
+  margin-top: 100px;
+  left: 50%;
 }
 
 .pageDisplay {
@@ -145,8 +150,7 @@ html, body {
 
 #contact-me {
   color: green;
-/* <<<<<<< HEAD */
-/* ======= */
+
 }
 
 svg {
@@ -176,4 +180,28 @@ footer {
 
 #homeParagraph {
   text-align: center;
+}
+
+.gardensList{
+  display: flex;
+
+}
+
+.profileBody{
+  overflow: auto;
+  width: 90vw;
+
+}
+
+.grid-container{
+  display: grid; 
+  grid-template-columns: auto auto;
+  grid-gap:20px;
+  /* background-color: greenyellow; */
+  min-height: 600px; 
+}
+
+#map{
+  height: 400px; 
+  width:400px
 }
