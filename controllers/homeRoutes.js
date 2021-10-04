@@ -1,51 +1,45 @@
 const router = require('express').Router();
-const { Project, User } = require('../models');
+const { Gardens, User } = require('../models');
 const withAuth = require('../utils/auth');
-const fs = require('fs'); 
+
 
 // update routes to what we want to show on the home page
 // create "explore page" potentially to load up garden DB
 
 router.get('/', async (req, res) => {
   try {
-    // Get all projects and JOIN with user data
-    const projectData = await Project.findAll({
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-      ],
-    });
+    const gardenData = await Gardens.findAll({});
 
     // Serialize data so the template can read it
-    const projects = projectData.map((project) => project.get({ plain: true }));
+    const gardens = gardenData.map((project) => project.get({ plain: true }));
 
     // Pass serialized data and session flag into template
     res.render('homepage', { 
-      projects, 
+      gardens, 
       logged_in: req.session.logged_in 
     });
   } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 });
 
-router.get('/project/:id', async (req, res) => {
+router.get('/garden/:id', async (req, res) => {
   try {
-    const projectData = await Project.findByPk(req.params.id, {
+    const gardenData = await Gardens.findByPk(req.params.id, {
       include: [
         {
           model: User,
-          attributes: ['name'],
+          attributes: ['firstname', 'lastname'],
+          as: 'host'
         },
       ],
     });
 
-    const project = projectData.get({ plain: true });
+    const garden = gardenData.get({ plain: true });
 
-    res.render('project', {
-      ...project,
+    res.render('garden', {
+      ...garden,
       logged_in: req.session.logged_in
     });
   } catch (err) {
@@ -53,32 +47,15 @@ router.get('/project/:id', async (req, res) => {
   }
 });
 
-//Render Map
-router.get('/maps', async (req,res) => {
-  console.log("Loading the MAPS HANDELBAR ")
-  res.render('maps');
-  //REading the garden JSON file 
-  // const gardenMarkers = fs.readFile('./seeds/gardensData.json', 'utf-8', (err, data) =>{
-  //   if (err) {
-  //     console.log(err); 
-  //     return; 
-  //   }
-  //   return data; 
-  // }); 
-  // console.log("JSON file data ", gardenMarkers);
-
-  // res.render('maps', {
-  //   markers : gardenMarkers,
-  //    logged_in: req.session.logged_in  })
-})
-
 // Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Project }],
+      include: [
+        {model: Gardens, as: 'hostedGardens'}
+      ]
     });
 
     const user = userData.get({ plain: true });
