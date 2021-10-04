@@ -44,17 +44,20 @@ body, html {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding-bottom: 10px;
 }
 
 #firstGarden {
   width: 20rem;
   height: 15rem;
   border-radius: 3px;
+  border: 10px groove green;
 }
 
 #secondGarden {
   width: 350px;
   height: 250px;
+  border: 10px groove green;
 }
 
 .mainclass {
@@ -153,8 +156,12 @@ body{
 }
 
 #map {
-  height: 80px;
+  height: 300px;
   width: 100%
+}
+
+.map {
+  margin-top: 15%;
 }
 
 html, body {
@@ -165,9 +172,7 @@ html, body {
 
 
 
-.map {
-  margin-top: 15%;
-}
+
 
 #contact-me {
   color: green;
