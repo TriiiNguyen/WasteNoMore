@@ -94,6 +94,8 @@ html, body {
 
 #contact-me {
   color: green;
+/* <<<<<<< HEAD */
+/* ======= */
 }
 
 svg {
@@ -113,6 +115,7 @@ footer {
   justify-content: center;
   background: white;
   width: 100%;
+<<<<<<< HEAD:public/css/style.css
 }
 
 .banner {
@@ -132,4 +135,7 @@ footer {
 
 #homeParagraph {
   text-align: center;
+=======
+/* >>>>>>> e94779fe800c8b635e349576d3d8c3cb83f9e1ad */
+>>>>>>> main:Main/public/css/style.css
 }
