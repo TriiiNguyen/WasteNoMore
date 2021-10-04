@@ -30,7 +30,7 @@ function initMap(){
     
     })
   }
-  addMarker({location{lat, lng}});
+  addMarker({location, lat, lng});
 
   //Listen for click on map location
   google.maps.event.addListener(map, "click", (event) => 
