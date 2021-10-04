@@ -30,11 +30,7 @@ function initMap(){
     
     })
   }
-<<<<<<< HEAD:controllers/api/map.js
-  addMarker({location,lat, lng});
-=======
   addMarker({location, lat, lng});
->>>>>>> main:Main/controllers/api/map.js
 
   //Listen for click on map location
   google.maps.event.addListener(map, "click", (event) => 
