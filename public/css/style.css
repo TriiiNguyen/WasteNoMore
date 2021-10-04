@@ -113,7 +113,6 @@ footer {
   justify-content: center;
   background: white;
   width: 100%;
-<<<<<<< HEAD:public/css/style.css
 }
 
 .banner {
@@ -124,16 +123,27 @@ footer {
   text-align: center;
 }
 
-#firstGarden, #secondGarden {
-  object-fit:contain;
-  width:200px;
+#firstGarden  {
+  /* object-fit:contain; */
+  width:300px;
   height:300px;
-  border: solid 1px #CCC"
+  border: 5px solid black
+}
+
+#secondGarden {
+  /* object-fit:contain; */
+  width:300px;
+  height:300px;
+  margin-left: 200px;
+  border: 5px solid black
 }
 
 #homeParagraph {
   text-align: center;
-=======
-/* >>>>>>> e94779fe800c8b635e349576d3d8c3cb83f9e1ad */
->>>>>>> main:Main/public/css/style.css
+}
+
+#pictures {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  max-height: 300px;
 }
