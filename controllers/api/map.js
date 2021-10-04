@@ -1,6 +1,6 @@
 // put key in .env file 
 // Create variable inside of dotenv file to replace with actual key
-const gardensData = require("../../seeds/gardensData.json");
+const gardensData = require("../../Main/seeds/gardensData.json");
 const lng = gardensData.longitude;
 const lat = gardensData.latitude;
 
