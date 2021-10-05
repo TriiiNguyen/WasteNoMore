@@ -156,10 +156,14 @@ header, .project:not(:last-child) {
 }
 
 .signUp {
-  margin-top: 20%;
-} */
+  margin: 10%;
+   
+}
 
-
+h2,
+h3 {
+  color: orange
+}
 
 .mainclass {
   width: 100%;
@@ -215,7 +219,10 @@ footer {
   text-align: center;
 }
 
-
+#contact-me {
+  margin: 40px;
+  margin-top: 70px;
+}
 
 #homeParagraph {
   text-align: center;
