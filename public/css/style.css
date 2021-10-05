@@ -155,6 +155,12 @@ header, .project:not(:last-child) {
   color: orange;
 }
 
+
+.signUp {
+  margin: 10%;
+   
+}
+
 #donation {
   text-align: center;
 }
@@ -171,7 +177,10 @@ header, .project:not(:last-child) {
   margin-top: 20%;
 } */
 
-
+h2,
+h3 {
+  color: orange
+}
 
 .mainclass {
   width: 100%;
@@ -202,9 +211,7 @@ html, body {
 
 
 
-#contact-me {
-  color: green;
-}
+
 
 svg {
   border-radius: 5px;
@@ -229,7 +236,10 @@ footer {
   text-align: center;
 }
 
-
+#contact-me {
+  margin: 40px;
+  margin-top: 70px;
+}
 
 #homeParagraph {
   text-align: center;
