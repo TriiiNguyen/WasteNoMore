@@ -171,7 +171,7 @@ header, .project:not(:last-child) {
   margin-top: 20%;
 } */
 
-/* 
+
 
 .mainclass {
   width: 100%;
@@ -250,11 +250,11 @@ footer {
   display: grid; 
   grid-template-columns: auto auto;
   grid-gap:20px;
-  /* background-color: greenyellow; */
-  /* min-height: 600px; 
+  /*background-color: greenyellow; */
+   min-height: 600px; 
 }
 
 #map{
   height: 400px; 
   width:400px
-} */
+} 
