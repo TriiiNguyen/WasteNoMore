@@ -2,17 +2,21 @@
   <div class="col-auto">
     <h2>Welcome, to {{name}}!</h2>
     {{!-- <p>Hosted by {{host.firstname}} {{host.lastname}}</p> --}}
-    <p>{{address}}</p>
+    <p class="center">{{address}}</p>
+    <div class="center">
     <a href="{{website}}" target="_blank">{{website}}</a>
+    </div>
   </div>
 </div>
 
 {{!-- {{> map}} --}}
 
-  <h2>Local Gardens</h2>
+  <h2 class="lg">Local Gardens</h2>
 
   <!--The div element for the map -->
+  <section class="mapCenter">
   <div id="map"></div>
+  </section>
 
 <script>
 function initMap() {

@@ -132,7 +132,7 @@ header, .project:not(:last-child) {
 }
 
 .navOptions {
-  color: orange;
+  color: rgb(114, 43, 43);
   margin: 10px;
 }
 
@@ -141,18 +141,18 @@ header, .project:not(:last-child) {
   border: none;
   padding: 0;
   cursor: pointer;
-  color: orange;
+  color: rgb(114, 43, 43);
   text-decoration: none;
   font-size: 100%;
 }
 
 .no-button:hover {
-  color: orange;
+  color: rgb(114, 43, 43);
   text-decoration: underline;
 }
 
 #titleColor {
-  color: orange;
+  color: rgb(114, 43, 43);
 }
 
 
@@ -182,6 +182,10 @@ h3 {
   color: orange
 }
 
+h2 {
+  text-align: center;
+}
+
 .mainclass {
   width: 100%;
 }
@@ -207,11 +211,13 @@ html, body {
   padding: 0;
 }
 
+.center {
+  text-align: center;
+}
 
-
-
-
-
+.lg {
+  margin-top: 20px;
+}
 
 svg {
   border-radius: 5px;
@@ -253,7 +259,7 @@ footer {
 .profileBody{
   overflow: auto;
   width: 90vw;
-
+  justify-content: center;
 }
 
 .grid-container{
@@ -262,9 +268,17 @@ footer {
   grid-gap:20px;
   /*background-color: greenyellow; */
    min-height: 600px; 
+   justify-content: center;
 }
 
 #map{
   height: 400px; 
-  width:400px
+  width:400px;
 } 
+
+.mapCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
