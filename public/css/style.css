@@ -155,7 +155,19 @@ header, .project:not(:last-child) {
   color: orange;
 }
 
-.signUp {
+#donation {
+  text-align: center;
+}
+
+#pageConstruction {
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; */
+  text-align: center;
+}
+
+/* .signUp {
   margin-top: 20%;
 } */
 
